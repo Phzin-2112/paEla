@@ -1,0 +1,30 @@
+body {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+}
+
+.subt p {
+    text-align: justify;
+    padding: 10px;
+    column-count: 2;
+    column-gap: 5%;
+    margin-top: 2%;
+    margin-bottom: 7%;
+
+}
+
+.subt h2 {
+    text-align: center;
+    margin-top: 5%;
+    text-decoration: underline;
+}
+
+.linkV{
+    text-align: center;
+}
+
+.linkV .a{
+    text-decoration: none;
+}

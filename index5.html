@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gráfico</title>
+    <link rel="stylesheet" href="assets/img/css/5.css">
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Me Abraça', 'Briga Comigo', 'Esquece de Responder', 'Me Beija', 'Grita Comigo', 'Sorri', 'rsrs'],
+                datasets: [{
+                    label: 'Qauantos % meu dia fica quando você...',
+                    data: [80, 15, 28, 90, 5, 60 ,100],
+                    backgroundColor: [' rgb(214, 85, 85)', ' rgb(214, 85, 85)', ' rgb(214, 85, 85)', ' rgb(214, 85, 85)', ' rgb(214, 85, 85)', ' rgb(214, 85, 85)', ' rgb(214, 85, 85)',],  // Cores de preenchimento
+                    borderWidth: 0.7,
+                    borderRadius: 7
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        max: 20
+                    },
+                    y: {
+                        max: 100
+                    }
+                }
+            }
+
+        });
+    </script>
+    <div class="linkV">
+        <a href="index.html">Página Inicial</a>
+    </div>
+</body>
+
+</html>
